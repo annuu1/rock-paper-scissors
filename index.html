@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="score-container">
+            <div class="game-title"> 
+                <h2>rock</h2>
+                <h2>paper</h2> 
+                <h2>scissors</h2>
+            </div>
+            <div id="card-container">
+                <div class="score-card">
+                    <p class="score-title">COMPUTER SCORE</p>
+                    <H2 class="score-value" id="computer-score">0</H2>
+                </div>
+                <div class="score-card">
+                    <p class="score-title">YOUR SCORE</p>
+                    <H2 class="score-value" id="player-score">0</H2>
+                </div>
+            </div>
+            
+        </div>
+        <div id="game-container">
+            <div id="rock" onclick="playGame('rock', event)">
+                <a href="#"><div class="image-wrapper">
+                    <img src="https://s3-alpha-sig.figma.com/img/e2f5/14e9/7d8f1b87d406a7bced07190e2c368075?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZavZ3xhFdKKko5ziUOWGehQfZu0F0M0~7aXOgP1GB8tuEra3NeILLk~F5ekMdQXT60m1f5560yMw~rMG36Vkbb0zGWLOBlV52pkcvP5Olwffu3OKZoyY5~Zj1n5zh1LvnuODQAl8Bwnge4JOUNBZFvjRKPOkP9VRD4bwdbmPL2V6d-xSz7-iqjG9bQ0W1FWNmkG7xsPeh3IFDdjo58sA9ScH7dRZWULXbs1UAcYjA2VSQZMgWw5FmGch62OIHv7UsqUDO8iHQr6YUdBFYXY26e5NpdmGUSWWgLa4n~w5CXFCER8kDwtHOylyldDJgPJPucCxW0NlRRE6-RVByjk4SQ__" alt="rock">
+                </div>
+                </a>
+            </div>
+            <div id="paper" onclick="playGame('paper', event)">
+                <a href="#">
+                    <img src="https://s3-alpha-sig.figma.com/img/9e58/4d5f/879bf162796082bc4c606349436e0c52?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Y~KLHI9gIfEErE85fz2EwPspTn-6vnLLZsc-AA4P8T80ASuLbs1yxRp7tz0h7hrTXtBGzZW8vve0DrnNo8WnlXc2-Os9wdcbc5~0SoCHnBfdMC8Vmv7zcluCHzkRCCoyA0B8wOro9stIYgVdWBOprNcG7NCuCSmOH-y7Jlf8kMBiifnbwA6xnpL-dmPZOzorzUjiQnA03RHz69f5iHeCnwonIeJMGi4S2YAUJOOiZEM5ODpge6IqZV-elKMC3LbOqh~aSrj~1PT9scXuw8mf2pN5LtDh-3Pvul2zIQaCR9hexsi-E9GT7i6d4zA7PbxuAbDS380oScmx2m34l8ErMw__" alt="paper">
+                </a>
+            </div>
+            <div id="scissors" onclick="playGame('scissors', event)">
+                <a href="#">
+                    <img src="https://s3-alpha-sig.figma.com/img/388b/63da/8e9ba336eea3ea7f107fc48755a6b68d?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MNaWN65uWhRHEO1hGTftGTjKaODjAenVsy3SVQm9F1Q8KEFbAGI0d3EmQjosRvTTNmUBXSYfwGkds48ja510F4-hJWP8nBU90hcMXEXOoson1pQNGrxjAAU6KBkyaxBDPhnqzJZqsCDiCGMVjbsNjealWCn8NhenCBOEyIOSZcys~NbARGSkVlGSNipYmNzEasYWVFTk2gUU2QamIZ-6vSUbZf69NNx4gc4x7NSoZl8R-Ob~Fo8O-P9NZDcSDvrsXGbdvLycK8JWZgVzdtHhycB-y5bJ6YE~bYXNxsXMswo6oQ8vsKoTVb5PSBEG7lirjnXcDEHqc--6fyHpAszjwg__" alt="scissors">
+                </a>
+            </div>
+        </div>
+        <div class="button-container">
+            <a id="rules" href="#">RULES</a>
+        </div>
+    </div>
+    <div id="rules-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <h1>Game Rules</h1>
+            <ul>
+                <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+                <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+                <li>If both players lay down the same hand, each player lays down another hand</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
