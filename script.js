@@ -139,6 +139,12 @@ function updateResult(playerChoice, computerChoice, winner) {
                 </a>
             </div>`;
 }
+function resetScores() {
+  winResult.Player = 0;
+  winResult.Computer = 0;
+  winResult.Tie = 0;
+  saveResultsToLocalStorage();
+}
 
 function openModal() {
   document.getElementById("rules-modal").style.display = "block";
