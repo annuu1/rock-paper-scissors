@@ -10,13 +10,15 @@ css for the score card
 #container{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+    gap: 50px;
     align-items: center;
     width: 100%;
     height: 100vh;
     background-color:#8CC461;
 }
 #score-container{
+    margin: 6rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -73,6 +75,11 @@ Play area
 #game-container{
     display: flex;
     gap: 3rem;
+}
+.downside{
+    position: relative !important;
+    top: 200px !important;
+    /* background-color: #0074B6; */
 }
 a[href="#"] img{
     height: 8rem;
